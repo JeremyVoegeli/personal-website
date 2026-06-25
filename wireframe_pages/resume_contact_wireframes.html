@@ -1,0 +1,85 @@
+<style>
+  .wf-pair { display: flex; flex-direction: column; gap: 1.5rem; }
+  .wf-shell { display: flex; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; background: var(--color-background-primary); }
+  .wf-shell-label { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+  .wf-sidebar { width: 160px; min-width: 160px; border-right: 0.5px solid var(--color-border-tertiary); padding: 1.5rem 1rem; display: flex; flex-direction: column; gap: 4px; background: var(--color-background-secondary); }
+  .wf-sidebar-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .wf-nav-link { font-size: 13px; color: var(--color-text-secondary); padding: 6px 8px; border-radius: var(--border-radius-md); }
+  .wf-nav-link.active { background: var(--color-background-primary); color: var(--color-text-primary); border: 0.5px solid var(--color-border-tertiary); font-weight: 500; }
+  .wf-sidebar-icons { margin-top: auto; display: flex; gap: 12px; padding-top: 1rem; border-top: 0.5px solid var(--color-border-tertiary); }
+  .wf-main { flex: 1; padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+  .wf-page-title { height: 16px; width: 80px; background: var(--color-border-secondary); border-radius: 4px; margin-bottom: 1.5rem; }
+  .wf-bar { height: 11px; background: var(--color-background-tertiary); border-radius: 4px; border: 0.5px solid var(--color-border-tertiary); margin-bottom: 7px; }
+  .wf-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 1rem; font-size: 13px; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 7px 16px; width: fit-content; }
+  .wf-embed { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); background: var(--color-background-secondary); height: 180px; display: flex; align-items: center; justify-content: center; margin-top: 1rem; }
+  .wf-contact-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .wf-contact-icon { font-size: 18px; color: var(--color-text-tertiary); width: 24px; text-align: center; }
+  .wf-contact-bar { height: 11px; background: var(--color-background-tertiary); border-radius: 4px; border: 0.5px solid var(--color-border-tertiary); flex: 1; }
+</style>
+
+<div class="wf-pair">
+
+  <div>
+    <div class="wf-shell-label">Resume</div>
+    <div class="wf-shell">
+      <div class="wf-sidebar">
+        <div class="wf-sidebar-name">Jeremy [Last]</div>
+        <div class="wf-nav-link"><i class="ti ti-home" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Home</div>
+        <div class="wf-nav-link"><i class="ti ti-code" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Projects</div>
+        <div class="wf-nav-link"><i class="ti ti-user" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>About</div>
+        <div class="wf-nav-link active"><i class="ti ti-file-text" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Resume</div>
+        <div class="wf-nav-link"><i class="ti ti-mail" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Contact</div>
+        <div class="wf-sidebar-icons">
+          <i class="ti ti-brand-github" style="font-size:18px; color:var(--color-text-secondary)" aria-label="GitHub"></i>
+          <i class="ti ti-brand-linkedin" style="font-size:18px; color:var(--color-text-secondary)" aria-label="LinkedIn"></i>
+        </div>
+      </div>
+      <div class="wf-main">
+        <div class="wf-page-title"></div>
+        <div class="wf-bar" style="width:55%"></div>
+        <div class="wf-bar" style="width:40%"></div>
+        <div class="wf-btn">
+          <i class="ti ti-download" style="font-size:13px" aria-hidden="true"></i> Download PDF
+        </div>
+        <div class="wf-embed">
+          <span style="font-size:12px; color:var(--color-text-tertiary)">PDF preview embed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="wf-shell-label">Contact</div>
+    <div class="wf-shell">
+      <div class="wf-sidebar">
+        <div class="wf-sidebar-name">Jeremy [Last]</div>
+        <div class="wf-nav-link"><i class="ti ti-home" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Home</div>
+        <div class="wf-nav-link"><i class="ti ti-code" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Projects</div>
+        <div class="wf-nav-link"><i class="ti ti-user" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>About</div>
+        <div class="wf-nav-link"><i class="ti ti-file-text" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Resume</div>
+        <div class="wf-nav-link active"><i class="ti ti-mail" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Contact</div>
+        <div class="wf-sidebar-icons">
+          <i class="ti ti-brand-github" style="font-size:18px; color:var(--color-text-secondary)" aria-label="GitHub"></i>
+          <i class="ti ti-brand-linkedin" style="font-size:18px; color:var(--color-text-secondary)" aria-label="LinkedIn"></i>
+        </div>
+      </div>
+      <div class="wf-main">
+        <div class="wf-page-title"></div>
+        <div class="wf-bar" style="width:60%; margin-bottom: 1.25rem"></div>
+        <div class="wf-contact-row">
+          <i class="ti ti-mail wf-contact-icon" aria-hidden="true"></i>
+          <div class="wf-contact-bar" style="max-width: 160px"></div>
+        </div>
+        <div class="wf-contact-row">
+          <i class="ti ti-brand-linkedin wf-contact-icon" aria-hidden="true"></i>
+          <div class="wf-contact-bar" style="max-width: 140px"></div>
+        </div>
+        <div class="wf-contact-row" style="border-bottom: none">
+          <i class="ti ti-brand-github wf-contact-icon" aria-hidden="true"></i>
+          <div class="wf-contact-bar" style="max-width: 130px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

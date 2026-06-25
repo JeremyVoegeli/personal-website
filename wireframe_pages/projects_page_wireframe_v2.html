@@ -1,0 +1,85 @@
+<style>
+  .wf-shell { display: flex; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; min-height: 600px; background: var(--color-background-primary); }
+  .wf-sidebar { width: 160px; min-width: 160px; border-right: 0.5px solid var(--color-border-tertiary); padding: 1.5rem 1rem; display: flex; flex-direction: column; gap: 4px; background: var(--color-background-secondary); }
+  .wf-sidebar-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .wf-nav-link { font-size: 13px; color: var(--color-text-secondary); padding: 6px 8px; border-radius: var(--border-radius-md); }
+  .wf-nav-link.active { background: var(--color-background-primary); color: var(--color-text-primary); border: 0.5px solid var(--color-border-tertiary); font-weight: 500; }
+  .wf-sidebar-icons { margin-top: auto; display: flex; gap: 12px; padding-top: 1rem; border-top: 0.5px solid var(--color-border-tertiary); }
+  .wf-main { flex: 1; padding: 2rem; overflow: hidden; }
+  .wf-page-title { height: 16px; width: 100px; background: var(--color-border-secondary); border-radius: 4px; margin-bottom: 1.5rem; }
+  .wf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .wf-card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; background: var(--color-background-primary); }
+  .wf-title-bar { height: 14px; width: 65%; background: var(--color-border-secondary); border-radius: 4px; margin-bottom: 10px; }
+  .wf-bar { height: 11px; background: var(--color-background-tertiary); border-radius: 4px; border: 0.5px solid var(--color-border-tertiary); margin-bottom: 7px; }
+  .wf-links { display: flex; gap: 8px; margin-top: 12px; }
+  .wf-link-pill { font-size: 11px; color: var(--color-text-tertiary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 3px 10px; }
+</style>
+
+<h2 class="sr-only">Wireframe of the projects page with a uniform 2-column card grid</h2>
+
+<div class="wf-shell">
+  <div class="wf-sidebar">
+    <div class="wf-sidebar-name">Jeremy [Last]</div>
+    <div class="wf-nav-link"><i class="ti ti-home" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Home</div>
+    <div class="wf-nav-link active"><i class="ti ti-code" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Projects</div>
+    <div class="wf-nav-link"><i class="ti ti-user" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>About</div>
+    <div class="wf-nav-link"><i class="ti ti-file-text" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Resume</div>
+    <div class="wf-nav-link"><i class="ti ti-mail" style="font-size:14px; margin-right:6px" aria-hidden="true"></i>Contact</div>
+    <div class="wf-sidebar-icons">
+      <i class="ti ti-brand-github" style="font-size:18px; color:var(--color-text-secondary)" aria-label="GitHub"></i>
+      <i class="ti ti-brand-linkedin" style="font-size:18px; color:var(--color-text-secondary)" aria-label="LinkedIn"></i>
+    </div>
+  </div>
+  <div class="wf-main">
+    <div class="wf-page-title"></div>
+    <div class="wf-grid">
+      <div class="wf-card">
+        <div class="wf-title-bar"></div>
+        <div class="wf-bar" style="width:100%"></div>
+        <div class="wf-bar" style="width:93%"></div>
+        <div class="wf-bar" style="width:78%"></div>
+        <div class="wf-links">
+          <span class="wf-link-pill"><i class="ti ti-brand-github" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>GitHub</span>
+          <span class="wf-link-pill"><i class="ti ti-external-link" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>Live</span>
+        </div>
+      </div>
+      <div class="wf-card">
+        <div class="wf-title-bar"></div>
+        <div class="wf-bar" style="width:100%"></div>
+        <div class="wf-bar" style="width:88%"></div>
+        <div class="wf-bar" style="width:72%"></div>
+        <div class="wf-links">
+          <span class="wf-link-pill"><i class="ti ti-brand-github" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>GitHub</span>
+          <span class="wf-link-pill"><i class="ti ti-external-link" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>Live</span>
+        </div>
+      </div>
+      <div class="wf-card">
+        <div class="wf-title-bar"></div>
+        <div class="wf-bar" style="width:100%"></div>
+        <div class="wf-bar" style="width:91%"></div>
+        <div class="wf-bar" style="width:65%"></div>
+        <div class="wf-links">
+          <span class="wf-link-pill"><i class="ti ti-brand-github" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>GitHub</span>
+        </div>
+      </div>
+      <div class="wf-card">
+        <div class="wf-title-bar"></div>
+        <div class="wf-bar" style="width:100%"></div>
+        <div class="wf-bar" style="width:85%"></div>
+        <div class="wf-bar" style="width:70%"></div>
+        <div class="wf-links">
+          <span class="wf-link-pill"><i class="ti ti-brand-github" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>GitHub</span>
+        </div>
+      </div>
+      <div class="wf-card">
+        <div class="wf-title-bar"></div>
+        <div class="wf-bar" style="width:100%"></div>
+        <div class="wf-bar" style="width:90%"></div>
+        <div class="wf-bar" style="width:60%"></div>
+        <div class="wf-links">
+          <span class="wf-link-pill"><i class="ti ti-brand-github" style="font-size:11px; margin-right:4px" aria-hidden="true"></i>GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
