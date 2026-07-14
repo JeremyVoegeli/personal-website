@@ -4,7 +4,7 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center">
       <div name="content" className="flex w-100% mx-30 bg-red-100 items-start">
         <div name="page-text" className="flex-1">
-          <h1>
+          <h1 className="bg-purple-200">
             Welcome!
           </h1>
           <p>
