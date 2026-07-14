@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import Nav from "./components/Nav";
 
 export const metadata = {
   title: "Jeremy Voegeli",
@@ -13,11 +14,7 @@ export default function RootLayout({ children }) {
         <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-blue-100">
           <span className="text-center font-semibold">Jeremy Voegeli</span>
           <hr className="border-gray-300 my-3"/>
-          <Link href="/" className="text-center py-1">Home</Link>
-          <Link href="/about" className="text-center py-1">About</Link>
-          <Link href="/projects" className="text-center py-1">Projects</Link>
-          <Link href="/resume" className="text-center py-1">Resume</Link>
-          <Link href="/contact" className="text-center py-1">Contact</Link>
+          <Nav />
           <div className="h-full"/>
           <div className="grid grid-rows-3 mb-10">
             <hr className="border-gray-300 my-3"/>
@@ -28,7 +25,7 @@ export default function RootLayout({ children }) {
         <main className="flex-1 ml-48">
           {children}
         </main>
-        </body>
+      </body>
     </html>
   );
 }
