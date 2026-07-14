@@ -1,7 +1,7 @@
 export default function About(){
     return (
         <div className="m-2">
-            <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2 ">
+            <div className="w-full max-w-6xl mx-auto grid grid-cols-3 gap-2 ">
                 <div className="bg-green-200 col-span-2 aspect-[2/1]">
                     WHO AM I
                 </div>
