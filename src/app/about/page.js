@@ -10,7 +10,28 @@ export default function About() {
           />
         </div>
 
-        <SectionCard span="col-span-2" label="Who Am I" />
+        <SectionCard span="col-span-2" label="Who Am I" aspect={false}>
+          <p>
+            I&apos;m Jeremy. I picked up marching percussion freshman year of high
+            school and have been playing ever since. My marching resume includes
+            4 years of competitive high school marching band, 2 years of high
+            school indoor percussion, 4 years at the UConn marching band, and 2
+            summers with the Spartans Drum and Bugle Corps. I now teach at both
+            the collegiate and professional level.
+          </p>
+          <p>
+            I studied Computer Science at UConn, with a concentration in
+            software design and development. My focus has been backend systems
+            and cloud infrastructure. I&apos;m AWS Certified Cloud Practitioner,
+            and I like how AWS pushes toward modular systems with clear
+            separation of concerns. More broadly, I just enjoy building things,
+            and contributing to something new and useful.
+          </p>
+          <p>
+            Aside from drums and computers, I spend most of my free time at the
+            gym or writing music.
+          </p>
+        </SectionCard>
         <PhotoBadgeCard
           span="col-span-2"
           src="/dci-photo-1.jpg"
@@ -32,14 +53,20 @@ export default function About() {
   );
 }
 
-function SectionCard({ label, span = "" }) {
+function SectionCard({ label, span = "", aspect = true, children }) {
   return (
-    <div className={`aspect-[2/1] rounded-2xl border border-[#D7DFE9] bg-white p-6 ${span} transition-shadow hover:shadow-md`}>
+    <div
+      className={`${aspect ? "aspect-[2/1]" : ""} rounded-2xl border border-[#D7DFE9] bg-white p-6 ${span} transition-shadow hover:shadow-md`}
+    >
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2E9C7B]">
         {label}
       </p>
       <div className="mt-3 h-px w-10 bg-[#D7DFE9]" />
-      {/* body copy goes here */}
+      {children && (
+        <div className="mt-4 space-y-4 text-sm leading-relaxed text-[#5C6B80]">
+          {children}
+        </div>
+      )}
     </div>
   );
 }
