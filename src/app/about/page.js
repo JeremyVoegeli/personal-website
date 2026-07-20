@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-[#EDF1F6] px-6 py-16">
       <div className="mx-auto grid w-full max-w-6xl grid-cols-3 gap-4">
-        <div className="relative aspect-square overflow-hidden rounded-2xl border border-[#D7DFE9] bg-white">
+        <div className="relative aspect-square overflow-hidden rounded-2xl border border-[#D7DFE9] bg-white transition-shadow hover:shadow-md">
           <img
             src="/Jeremy2026Portrait.jpg"
             alt="Jeremy Voegeli"
@@ -34,7 +34,7 @@ export default function About() {
 
 function SectionCard({ label, span = "" }) {
   return (
-    <div className={`aspect-[2/1] rounded-2xl border border-[#D7DFE9] bg-white p-6 ${span}`}>
+    <div className={`aspect-[2/1] rounded-2xl border border-[#D7DFE9] bg-white p-6 ${span} transition-shadow hover:shadow-md`}>
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2E9C7B]">
         {label}
       </p>
@@ -57,7 +57,7 @@ function BadgeCard({ label }) {
 
 function PhotoBadgeCard({ src, alt, label, span = "" }) {
   return (
-    <div className={`flex aspect-[2/1] items-stretch gap-4 rounded-2xl border border-[#D7DFE9] bg-white p-5 ${span}`}>
+    <div className={`flex aspect-[2/1] items-stretch gap-4 rounded-2xl border border-[#D7DFE9] bg-white p-5 ${span} transition-shadow hover:shadow-md`}>
       <img
         src={src}
         alt={alt}
