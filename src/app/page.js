@@ -29,11 +29,11 @@ export default function Home() {
           </div>
 
           <p className="max-w-xl font-sans text-base leading-relaxed text-[#5C6B80]">
-            Hi, I&apos;m Jeremy — a 2026 graduate from the University of Connecticut
+            Hi, I&apos;m Jeremy, a 2026 graduate from the University of Connecticut
             with a B.S. in Computer Science, concentrated in software design and
-            development. My focus is backend systems and cloud infrastructure.
-            Outside of CS, I play and teach marching percussion, at both the
-            collegiate and competitive Drum Corps level.
+            development. Outside of CS, I play the marching snare drum. I spent 
+            two summers competing with the Spartans Drum and Bugle Corps, and now continue to teach 
+            drums at both the collegiate and professional drum corps level.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
