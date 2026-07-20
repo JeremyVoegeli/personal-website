@@ -34,7 +34,7 @@ export default function About() {
         </SectionCard>
         <PhotoBadgeCard
           span="col-span-2"
-          src="/dci-photo-1.jpg"
+          src="/JeremySpartans1.jpeg"
           alt="Jeremy performing with the Spartans Drum and Bugle Corps"
           label="Drum Corps International"
         />
@@ -85,17 +85,17 @@ function BadgeCard({ label }) {
 function PhotoBadgeCard({ src, alt, label, span = "" }) {
   return (
     <div className={`flex aspect-[2/1] items-stretch gap-4 rounded-2xl border border-[#D7DFE9] bg-white p-5 ${span} transition-shadow hover:shadow-md`}>
-      <img
-        src={src}
-        alt={alt}
-        className="h-full w-1/2 rounded-xl object-cover"
-      />
       <div className="flex flex-1 flex-col justify-between">
         <Ticks />
         <p className="font-mono text-xs uppercase leading-snug tracking-[0.15em] text-[#5C6B80]">
           {label}
         </p>
       </div>
+      <img
+        src={src}
+        alt={alt}
+        className="h-full w-1/2 rounded-xl object-cover object-top"
+      />
     </div>
   );
 }
