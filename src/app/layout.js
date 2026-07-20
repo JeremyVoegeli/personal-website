@@ -1,6 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
 import Nav from "./components/Nav";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+
+const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
+const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata = {
   title: "Jeremy Voegeli",
@@ -10,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body className="min-h-screen flex">
+      <body className="min-h-screen flex {`${display.variable} ${sans.variable} ${mono.variable}`}">
         <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-blue-100">
           <span className="text-center font-semibold">Jeremy Voegeli</span>
           <hr className="border-gray-300 my-3"/>
