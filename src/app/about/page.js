@@ -35,16 +35,20 @@ export default function About() {
         <PhotoBadgeCard
           span="col-span-2"
           src="/JeremySpartans1.jpeg"
-          alt="Jeremy performing with the Spartans Drum and Bugle Corps"
-          label="Drum Corps International"
+          alt="Spartans DBC lot warmup"
+          label="Spartans DBC"
+          detail="Warming up in the lot before a competition in Little Rock, AR"
+          object_offset={"top"}
         />
         <BadgeCard label="Education" />
         <BadgeCard label="AWS Certified" />
         <PhotoBadgeCard
           span="col-span-2"
-          src="/dci-photo-2.jpg"
-          alt="Jeremy teaching percussion"
+          src="/JeremyTeachingUConn.jpg"
+          alt="Teaching at UConn"
           label="Percussion Instructor"
+          detail="Teaching at the UConn Drumline audition camp"
+          object_offset={"left"}
         />
 
         <SectionCard span="col-span-2" label="Currently Looking For" />
@@ -82,11 +86,14 @@ function BadgeCard({ label }) {
   );
 }
 
-function PhotoBadgeCard({ src, alt, label, span = "" }) {
+function PhotoBadgeCard({ src, alt, label, detail, object_offset, span = "" }) {
   return (
     <div className={`flex aspect-[2/1] items-stretch gap-4 rounded-2xl border border-[#D7DFE9] bg-white p-5 ${span} transition-shadow hover:shadow-md`}>
       <div className="flex flex-1 flex-col justify-between">
         <Ticks />
+        {detail && (
+            <p className="mt-1 text-xs text-[#5C6B80]/70">{detail}</p>
+        )}
         <p className="font-mono text-xs uppercase leading-snug tracking-[0.15em] text-[#5C6B80]">
           {label}
         </p>
@@ -94,7 +101,7 @@ function PhotoBadgeCard({ src, alt, label, span = "" }) {
       <img
         src={src}
         alt={alt}
-        className="h-full w-1/2 rounded-xl object-cover object-top"
+        className={`h-full w-1/2 rounded-xl object-cover object-${object_offset}`}
       />
     </div>
   );
