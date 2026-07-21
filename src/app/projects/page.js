@@ -14,7 +14,7 @@ export default function Projects() {
           span="col-span-2"
             eyebrow="full-stack app"
             title="JobTracker"
-            description="One-line description of the project and the problem it solves."
+            description="Track and filter job applications end-to-end, from a tested Node API to a CI/CD pipeline that deploys on every push."
             stack={["React", "Node.js", "PostgreSQL", "Jest"]}
             githubUrl="https://github.com/JeremyVoegeli/JobTracker"
           />
@@ -28,11 +28,11 @@ export default function Projects() {
           />
 
           <ProjectCard
-            eyebrow="Project"
-            title="Title 3"
-            description="One-line description of the project and the problem it solves."
-            stack={["Next.js", "Tailwind"]}
-            githubUrl="#"
+            eyebrow="Collaborative Build"
+            title="Mock Pet Adoption Site"
+            description="Built collaboratively with a team, using Git branching workflows to ship features in parallel. Flask backend, React frontend, containerized with Docker."
+            stack={["Python", "Flask", "SQLite", "React", "Docker"]}
+            githubUrl="https://github.com/JeremyVoegeli/AcademicProjects/tree/main/MockPetAdoptionWebsite"
           />
           <BadgeCard
             label="More Work"
