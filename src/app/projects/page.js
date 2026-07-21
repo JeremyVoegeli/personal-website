@@ -34,6 +34,13 @@ export default function Projects() {
             stack={["Python", "Flask", "SQLite", "React", "Docker"]}
             githubUrl="https://github.com/JeremyVoegeli/AcademicProjects/tree/main/MockPetAdoptionWebsite"
           />
+          <ProjectCard
+            eyebrow="AI-Assisted Build"
+            title="JobTracker CLI"
+            description="A quick CLI companion to JobTracker, built while experimenting with Claude Code as a development partner. Handles CRUD operations against the same job-tracker database."
+            stack={["Python", "Click", "SQLite", "Pytest"]}
+            githubUrl="https://github.com/JeremyVoegeli/cli-job-tracker"
+          />
           <BadgeCard
             label="More Work"
             detail="See full GitHub"
