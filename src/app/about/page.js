@@ -40,8 +40,8 @@ export default function About() {
           detail="Warming up in the lot before a competition in Little Rock, AR"
           object_offset={"top"}
         />
-        <BadgeCard label="Education" />
-        <BadgeCard label="AWS Certified" />
+        <BadgeCard label="Education" detail="B.S. Computer Science, UConn '26" />
+        <BadgeCard label="AWS Certified" detail="Cloud Practitioner" />
         <PhotoBadgeCard
           span="col-span-2"
           src="/JeremyTeachingUConn.jpg"
@@ -51,7 +51,14 @@ export default function About() {
           object_offset={"left"}
         />
 
-        <SectionCard span="col-span-2" label="Currently Looking For" />
+        <SectionCard span="col-span-2" label="Currently Looking For">
+            <p>
+            I'm currently looking for entry-level software engineering and cloud roles,
+             ideally somewhere I can keep working with the AWS stack I'm certified in 
+             (S3, Lambda, DynamoDB, API Gateway). I'm based in Connecticut and open to 
+             hybrid/on-site roles in the area, or fully remote.
+          </p>
+        </SectionCard>
       </div>
     </div>
   );
@@ -75,10 +82,13 @@ function SectionCard({ label, span = "", aspect = true, children }) {
   );
 }
 
-function BadgeCard({ label }) {
+function BadgeCard({ label, detail}) {
   return (
     <div className="group flex aspect-square flex-col justify-between rounded-2xl border border-[#D7DFE9] bg-white p-5 transition-shadow hover:shadow-md">
       <Ticks />
+      {detail && (
+        <p className="mt-1 text-xs text-[#5C6B80]/70">{detail}</p>
+      )}
       <p className="font-mono text-xs uppercase leading-snug tracking-[0.15em] text-[#5C6B80]">
         {label}
       </p>
