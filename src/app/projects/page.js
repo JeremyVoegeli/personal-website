@@ -37,9 +37,14 @@ export default function Projects() {
           <ProjectCard
             eyebrow="AI-Assisted Build"
             title="JobTracker CLI"
-            description="A quick CLI companion to JobTracker, built while experimenting with Claude Code as a development partner. Handles CRUD operations against the same job-tracker database."
+            description="A quick CLI companion to JobTracker, built while experimenting with Claude Code as a development partner. Handles CRUD operations against a SQLite database."
             stack={["Python", "Click", "SQLite", "Pytest"]}
             githubUrl="https://github.com/JeremyVoegeli/cli-job-tracker"
+          />
+          <BadgeCard
+            label="This site"
+            detail="Next.js · Tailwind · Vercel"
+            href="https://github.com/JeremyVoegeli/personal-website"
           />
           <BadgeCard
             label="More Work"
