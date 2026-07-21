@@ -82,16 +82,18 @@ function SectionCard({ label, span = "", aspect = true, children }) {
   );
 }
 
-function BadgeCard({ label, detail}) {
+function BadgeCard({ label, detail }) {
   return (
     <div className="group flex aspect-square flex-col justify-between rounded-2xl border border-[#D7DFE9] bg-white p-5 transition-shadow hover:shadow-md">
       <Ticks />
-      {detail && (
-        <p className="mt-1 text-xs text-[#5C6B80]/70">{detail}</p>
-      )}
-      <p className="font-mono text-xs uppercase leading-snug tracking-[0.15em] text-[#5C6B80]">
-        {label}
-      </p>
+      <div>
+        <p className="font-mono text-xs uppercase tracking-[0.15em] text-[#2E9C7B]">
+          {label}
+        </p>
+        {detail && (
+          <p className="mt-1 text-sm font-medium text-[#1E2A3A]">{detail}</p>
+        )}
+      </div>
     </div>
   );
 }
@@ -101,12 +103,14 @@ function PhotoBadgeCard({ src, alt, label, detail, object_offset, span = "" }) {
     <div className={`flex aspect-[2/1] items-stretch gap-4 rounded-2xl border border-[#D7DFE9] bg-white p-5 ${span} transition-shadow hover:shadow-md`}>
       <div className="flex flex-1 flex-col justify-between">
         <Ticks />
-        {detail && (
-            <p className="mt-1 text-xs text-[#5C6B80]/70">{detail}</p>
-        )}
-        <p className="font-mono text-xs uppercase leading-snug tracking-[0.15em] text-[#5C6B80]">
-          {label}
-        </p>
+        <div>
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-[#2E9C7B]">
+            {label}
+          </p>
+          {detail && (
+            <p className="mt-1 text-sm font-medium text-[#1E2A3A]">{detail}</p>
+          )}
+        </div>
       </div>
       <img
         src={src}
