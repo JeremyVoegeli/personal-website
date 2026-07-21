@@ -1,3 +1,4 @@
+import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Ticks } from "../components/ui/DesignSystem";
 
 export default function Contact() {
@@ -13,16 +14,19 @@ export default function Contact() {
 
         <div className="grid grid-cols-3 gap-4">
           <ContactCard
+            icon={FiMail}
             label="Email"
-            detail="jeremyvoegeli@gmail.com"
-            href="mailto:jeremyvoegeli@gmail.com"
+            detail="jeremy@example.com"
+            href="mailto:jeremy@example.com"
           />
           <ContactCard
+            icon={FiLinkedin}
             label="LinkedIn"
             detail="/in/jeremyvoegeli"
             href="https://linkedin.com/in/jeremyvoegeli"
           />
           <ContactCard
+            icon={FiGithub}
             label="GitHub"
             detail="@JeremyVoegeli"
             href="https://github.com/JeremyVoegeli"
@@ -33,7 +37,7 @@ export default function Contact() {
   );
 }
 
-function ContactCard({ label, detail, href }) {
+function ContactCard({ icon: Icon, label, detail, href }) {
   return (
     <a
       href={href}
@@ -42,9 +46,12 @@ function ContactCard({ label, detail, href }) {
       className="group flex aspect-[2/1] flex-col justify-between rounded-2xl border border-[#D7DFE9] bg-white p-6 transition-shadow hover:shadow-md"
     >
       <div className="flex items-start justify-between">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2E9C7B]">
-          {label}
-        </p>
+        <div className="flex items-center gap-2">
+          <Icon size={16} strokeWidth={1.75} className="text-[#2E9C7B]" />
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2E9C7B]">
+            {label}
+          </p>
+        </div>
         <Ticks />
       </div>
       <p className="text-sm font-medium text-[#1E2A3A] transition-colors group-hover:text-[#2E9C7B]">
