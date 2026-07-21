@@ -41,16 +41,18 @@ export default function Projects() {
             stack={["Python", "Click", "SQLite", "Pytest"]}
             githubUrl="https://github.com/JeremyVoegeli/cli-job-tracker"
           />
-          <BadgeCard
-            label="This site"
-            detail="Next.js · Tailwind · Vercel"
-            href="https://github.com/JeremyVoegeli/personal-website"
-          />
-          <BadgeCard
-            label="More Work"
-            detail="See full GitHub"
-            href="https://github.com/JeremyVoegeli"
-          />
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
+            <BadgeCard
+              label="This site"
+              detail="Next.js · Tailwind · Vercel"
+              href="https://github.com/JeremyVoegeli/personal-website"
+            />
+            <BadgeCard
+              label="More Work"
+              detail="See full GitHub"
+              href="https://github.com/JeremyVoegeli"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -104,13 +106,13 @@ function ProjectLink({ href, label }) {
 
 function BadgeCard({ label, detail, href }) {
   const content = (
-    <div className="group flex h-full flex-col justify-between rounded-2xl border border-[#D7DFE9] bg-white p-5 transition-shadow hover:shadow-md">
-      <Ticks />
+    <div className="group flex h-full flex-col justify-between rounded-xl border border-[#D7DFE9]/60 bg-[#F7FAFC] p-4 transition-colors hover:bg-white hover:shadow-sm">
+      <Ticks small />
       <div>
-        <p className="font-mono text-xs uppercase tracking-[0.15em] text-[#2E9C7B]">
+        <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#5C6B80]">
           {label}
         </p>
-        {detail && <p className="mt-1 text-sm font-medium text-[#1E2A3A]">{detail}</p>}
+        {detail && <p className="mt-1 text-xs font-medium text-[#1E2A3A]">{detail}</p>}
       </div>
     </div>
   );
@@ -124,7 +126,7 @@ function BadgeCard({ label, detail, href }) {
   );
 }
 
-function Ticks() {
+function Ticks({ small = false }) {
   return (
     <div className="flex gap-[3px]" aria-hidden="true">
       {Array.from({ length: 5 }).map((_, i) => (
@@ -133,7 +135,7 @@ function Ticks() {
           className="bg-[#2E9C7B]"
           style={{
             width: "2px",
-            height: i === 0 ? "10px" : "5px",
+            height: small ? (i === 0 ? "7px" : "3px") : i === 0 ? "10px" : "5px",
             opacity: i === 0 ? 1 : 0.4,
           }}
         />
