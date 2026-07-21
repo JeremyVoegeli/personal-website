@@ -1,5 +1,3 @@
-// components/ui/DesignSystem.jsx
-
 export function Ticks({ small = false }) {
   return (
     <div className="flex gap-[3px]" aria-hidden="true">
