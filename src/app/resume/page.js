@@ -14,7 +14,9 @@ export default function Resume() {
         <div className="grid grid-cols-3 gap-4">
           <SectionCard span="col-span-2" label="Overview" aspect={false}>
             <p>
-              Maybe a little blurb about my resume or something.
+              A quick summary before the PDF: I graduated from UConn with a CS degree in 
+              May 2026, I'm AWS Certified Cloud Practitioner, and I'm currently searching 
+              for entry-level SWE and cloud roles, CT-based or fully remote.
             </p>
           </SectionCard>
 
