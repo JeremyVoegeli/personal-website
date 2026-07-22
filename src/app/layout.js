@@ -2,6 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import Nav from "./components/Nav";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -28,16 +29,16 @@ export default function RootLayout({ children }) {
             <Link
               href="https://github.com/JeremyVoegeli"
               target="_blank"
-              className="text-center py-1 text-sm text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
+              className="flex justify-center py-1 text-3xl text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
             >
-              GitHub
+              <FiGithub />
             </Link>
             <Link
               href="https://www.linkedin.com/in/jeremyvoegeli/"
               target="_blank"
-              className="text-center py-1 text-sm text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
+              className=" flex justify-center py-2 text-3xl text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
             >
-              LinkedIn
+              <FiLinkedin />
             </Link>
           </div>
         </aside>
