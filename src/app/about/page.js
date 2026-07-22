@@ -49,7 +49,7 @@ export default function About() {
           src="/JeremyTeachingUConn.jpg"
           alt="Teaching at UConn"
           label="Percussion Instructor"
-          detail="Teaching at the UConn Drumline audition camp"
+          detail="Teaching at the UConn Drumline 2026 audition camp"
           object_offset={"object-left"}
         />
 
