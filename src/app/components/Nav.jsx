@@ -15,14 +15,18 @@ export default function Nav() {
   const pathname = usePathname()
 
   return (
-    <nav className="flex flex-col">
+    <nav className="flex flex-col py-4">
       {navItems.map((item) => {
         const isActive = pathname === item.href
         return (
           <Link
             key={item.href}
             href={item.href}
-            className={`text-center py-1 ${isActive ? 'font-semibold bg-blue-200' : ''}`}
+            className={`text-center py-2 mx-4 border-b-2 transition-colors ${
+              isActive
+                ? 'font-semibold text-[#2E9C7B] border-[#2E9C7B]'
+                : 'text-[#B9C4D0] border-transparent hover:text-white hover:border-[#33455C]'
+            }`}
           >
             {item.label}
           </Link>

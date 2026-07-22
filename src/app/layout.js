@@ -15,16 +15,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body className="min-h-screen flex {`${display.variable} ${sans.variable} ${mono.variable}`}">
-        <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-blue-100">
-          <span className="text-center font-semibold">Jeremy Voegeli</span>
-          <hr className="border-gray-300 my-3"/>
+      <body className={`min-h-screen flex ${display.variable} ${sans.variable} ${mono.variable}`}>
+        <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-[#1E2A3A] text-[#EDF1F6] border-r border-[#0F1720]">
+          <span className="text-center font-display font-semibold pt-8 pb-4 text-white">
+            Jeremy Voegeli
+          </span>
+          <hr className="border-[#33455C] mx-4" />
           <Nav />
-          <div className="h-full"/>
-          <div className="grid grid-rows-3 mb-10">
-            <hr className="border-gray-300 my-3"/>
-            <Link href="https://github.com/JeremyVoegeli" target="_blank" className="text-center py-1">GitHub</Link>
-            <Link href="https://www.linkedin.com/in/jeremyvoegeli/" target="_blank" className="text-center py-1">LinkedIn</Link>
+          <div className="h-full" />
+          <div className="grid grid-rows-3 mb-10 px-4">
+            <hr className="border-[#33455C] mb-2" />
+            <Link
+              href="https://github.com/JeremyVoegeli"
+              target="_blank"
+              className="text-center py-1 text-sm text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
+            >
+              GitHub
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/jeremyvoegeli/"
+              target="_blank"
+              className="text-center py-1 text-sm text-[#B9C4D0] hover:text-[#2E9C7B] transition-colors"
+            >
+              LinkedIn
+            </Link>
           </div>
         </aside>
         <main className="flex-1 ml-48">
