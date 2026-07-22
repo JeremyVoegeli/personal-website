@@ -73,7 +73,7 @@ export function PhotoBadgeCard({ src, alt, label, detail, object_offset, span = 
       <img
         src={src}
         alt={alt}
-        className={`h-full w-1/2 rounded-xl object-cover object-${object_offset}`}
+        className={`h-full w-1/2 rounded-xl object-cover ${object_offset}`}
       />
     </div>
   );

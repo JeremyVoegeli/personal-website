@@ -1,4 +1,4 @@
-import { SectionCard, BadgeCard, PhotoBadgeCard, Ticks } from "../components/ui/DesignSystem";
+import { SectionCard, BadgeCard, PhotoBadgeCard } from "../components/ui/DesignSystem";
 
 export default function About() {
   return (
@@ -40,7 +40,7 @@ export default function About() {
           alt="Spartans DBC lot warmup"
           label="Spartans DBC"
           detail="Warming up in the lot before a competition in Little Rock, AR"
-          object_offset={"top"}
+          object_offset={"object-top"}
         />
         <BadgeCard label="Education" detail="B.S. Computer Science, UConn '26" />
         <BadgeCard label="AWS Certified" detail="Cloud Practitioner" />
@@ -50,7 +50,7 @@ export default function About() {
           alt="Teaching at UConn"
           label="Percussion Instructor"
           detail="Teaching at the UConn Drumline audition camp"
-          object_offset={"left"}
+          object_offset={"object-left"}
         />
 
         <SectionCard span="col-span-2" label="Currently Looking For">
