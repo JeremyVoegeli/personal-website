@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body className={`min-h-screen flex ${display.variable} ${sans.variable} ${mono.variable}`}>
-        <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-[#1E2A3A] text-[#EDF1F6] border-r border-[#0F1720]">
+        <aside className="fixed w-48 shrink-0 h-screen flex flex-col bg-[#365066] text-[#EDF1F6] border-r border-[#0F1720]">
           <span className="text-center font-display font-semibold pt-8 pb-4 text-white">
             Jeremy Voegeli
           </span>
