@@ -2,7 +2,7 @@
 
 Personal portfolio and resume site for Jeremy Voegeli — software engineer and percussion instructor, based in Newtown, CT.
 
-**Live site:** [jeremyvoegeli.com](https://jeremyvoegeli.com)
+**Live site:** [https://personal-website-temp-name.vercel.app/](https://personal-website-temp-name.vercel.app/)
 
 ## Overview
 
@@ -10,7 +10,7 @@ A five-page personal site with a fixed left sidebar for navigation:
 
 - **Home** — landing page
 - **About** — background, music/marching history, CS focus, and what I'm currently looking for
-- **Projects** — featured project work, including [JobTracker](https://github.com/JeremyVoegeli) and a mock AWS-based auction site
+- **Projects** — featured project work, including [JobTracker](https://github.com/JeremyVoegeli/JobTracker) and a mock AWS-based auction site
 - **Resume** — education and certifications
 - **Contact** — contact info
 
