@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# jeremyvoegeli.com
+
+Personal portfolio and resume site for Jeremy Voegeli — software engineer and percussion instructor, based in Newtown, CT.
+
+**Live site:** [jeremyvoegeli.com](https://jeremyvoegeli.com)
+
+## Overview
+
+A five-page personal site with a fixed left sidebar for navigation:
+
+- **Home** — landing page
+- **About** — background, music/marching history, CS focus, and what I'm currently looking for
+- **Projects** — featured project work, including [JobTracker](https://github.com/JeremyVoegeli) and a mock AWS-based auction site
+- **Resume** — education and certifications
+- **Contact** — contact info
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Vercel](https://vercel.com/) for hosting and deployment
+- Fonts via `next/font/google`: Space Grotesk (display), Inter (sans), JetBrains Mono (mono)
+
+## Design System
+
+Shared UI components live in `app/components/ui/DesignSystem.js` and are reused across pages rather than styled individually:
+
+- `SectionCard` — bordered content block with a label
+- `BadgeCard` — compact label/detail card
+- `PhotoBadgeCard` — image paired with a label/detail, used for photo-driven sections
+- `ProjectCard` / `ProjectLink` — project listing components
+- `Ticks` — decorative accent element
+
+Color palette is a light gray/blue base with a green accent, kept consistent across the sidebar, cards, and active nav states.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployed on Vercel via GitHub integration — pushes to `main` trigger a production deploy automatically, and other branches/PRs get their own preview URLs.
 
-## Learn More
+## Links
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [GitHub](https://github.com/JeremyVoegeli)
+- [LinkedIn](https://www.linkedin.com/in/jeremyvoegeli/)
