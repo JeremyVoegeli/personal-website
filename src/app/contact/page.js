@@ -16,7 +16,7 @@ export default function Contact() {
           <ContactCard
             icon={FiMail}
             label="Email"
-            detail="jeremy@example.com"
+            detail="jeremyvoegeli@gmail.com"
             href="mailto:jeremy@example.com"
           />
           <ContactCard
